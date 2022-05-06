@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+    <title>Kurs JS ćwiczenia - gra: kamień/papier/nożyce</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <h1>GRA: KAMIEŃ, PAPIER, NOŻYCE</h1>
+        <h3>Wybierz rękę:</h3>
+        <div class="gallery">
+            <img src="gallery/Kamien.png" data-option="kamien" class="first" alt="kamień">
+            <img src="gallery/Papier.png" data-option="papier" alt="papier">
+            <img src="gallery/Nozyce.png" data-option="nożyce" alt="nożyce">
+        </div>
+        <button id="start-btn">ZAGRAJ!</button>
+        <div id="panel-left">
+            <h3>Wyniki gry</h3>
+            <p>Twój wybór: <span data-summary="your-choice"></span></p>
+            <p>Wybór komputera: <span data-summary="ai-choice"></span></p>
+            <h2>Zwyciężca: <span data-summary="winner"></span></h2>
+        </div>
+        <div id="panel-right">
+            <h3>Rozgrywka</h3>
+            <p class="games">Zagrania: <span>0</span></p>
+            <p class="wins">Zwycięstwa: <span>0</span></p>
+            <p class="losses">Porażki: <span>0</span></p>
+            <p class="draws">Remisy: <span>0</span></p>
+        </div>
+
+
+        <!-- end of div wrapper -->
+    </div>
+    <script src="main.js"></script>
+</body>
+
+</html>
